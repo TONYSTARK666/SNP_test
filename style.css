@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: url("./images/header-img.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-img.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 30px;
+}
+.header__container {
+  max-width: 1168px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header__logo {
+  margin-right: 182px;
+}
+.header__nav ul {
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-right: 5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+.header__nav-item:hover {
+  border-bottom: 2px solid #ffffff;
+}
+.header__phone {
+  margin-left: 182px;
+  color: #ffffff;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
