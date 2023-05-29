@@ -34,6 +34,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .header__logo {
   margin-right: 182px;
