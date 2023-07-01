@@ -1,4 +1,7 @@
 $white: #ffffff;
+$black: #1B1F2B;
+$orange: #EFA501;
+$orange_light: #F8E6BE;
 
 html {
     box-sizing: border-box;
@@ -23,14 +26,25 @@ a {
     text-decoration: none;
 }
 
-// Header styles
-
-.header {
+.start {
     background: url("./images/header-img.jpg") no-repeat center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-img.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
-    padding-top: 30px;
+}
+
+// Container
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+// Header styles
+
+.header {
+
+    padding-top: 3rem;
+    margin-bottom: 14.5rem;
 
     &__container {
         max-width: 1168px;
@@ -74,4 +88,59 @@ a {
         font-size: 2rem;
     }
 
+}
+
+// Intro styles
+
+.intro {
+
+    &__title {
+        color: $white;
+        font-weight: 700;
+        font-size: 9.6rem;
+        line-height: 109%;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        margin-bottom: 5rem;
+    }
+
+    &__desc {
+        color: $white;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 142%;
+
+        max-width: 56.2rem;
+        margin: 0 auto;
+        margin-bottom: 5.2rem;
+    }
+
+    &__button {
+        padding: 0.5rem 2rem;
+        display: block;
+        max-width: 11.8rem;
+        margin: 0 auto;
+
+        border-radius: 1rem;
+        background: $white;
+        cursor: pointer;
+
+        color: $black;
+        font-size: 1.7rem;
+        line-height: 142%;
+        letter-spacing: -0.17px;
+
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: $orange;
+            color: $white;
+        }
+
+        &:active {
+            background-color: $orange_light;
+            color: $black;
+        }
+    }
 }

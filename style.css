@@ -21,12 +21,21 @@ a {
   text-decoration: none;
 }
 
-.header {
+.start {
   background: url("./images/header-img.jpg") no-repeat center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-img.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
-  padding-top: 30px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 3rem;
+  margin-bottom: 14.5rem;
 }
 .header__container {
   max-width: 1168px;
@@ -61,4 +70,45 @@ a {
   margin-left: 182px;
   color: #ffffff;
   font-size: 2rem;
+}
+
+.intro__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 9.6rem;
+  line-height: 109%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 5rem;
+}
+.intro__desc {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 142%;
+  max-width: 56.2rem;
+  margin: 0 auto;
+  margin-bottom: 5.2rem;
+}
+.intro__button {
+  padding: 0.5rem 2rem;
+  display: block;
+  max-width: 11.8rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: #ffffff;
+  cursor: pointer;
+  color: #1B1F2B;
+  font-size: 1.7rem;
+  line-height: 142%;
+  letter-spacing: -0.17px;
+  transition: all 0.3s ease;
+}
+.intro__button:hover {
+  background-color: #EFA501;
+  color: #ffffff;
+}
+.intro__button:active {
+  background-color: #F8E6BE;
+  color: #1B1F2B;
 }/*# sourceMappingURL=style.css.map */
