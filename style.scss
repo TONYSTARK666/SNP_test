@@ -3,6 +3,9 @@ $black: #1B1F2B;
 $orange: #EFA501;
 $orange_light: #F8E6BE;
 $green: #286562;
+$gray: #A6A6A6;
+$beige: #F9F7F4;
+$beige2: #F4F0E9;
 
 
 // HTML
@@ -39,7 +42,6 @@ a {
     background-size: cover;
     height: 111vh;
 
-    margin-bottom: 13.5rem;
 }
 
 // Container
@@ -56,6 +58,19 @@ a {
     font-weight: 700;
     line-height: 124%;
 }
+
+// Description
+.description {
+    color: $gray;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 142%;
+
+    max-width: 41.8rem;
+    margin-bottom: 10rem;
+}
+
 
 // Header styles
 
@@ -169,7 +184,8 @@ a {
 // Choice start
 
 .choice {
-    margin-bottom: 13.5rem;
+    padding-top: 13.5rem;
+    background-color: $beige;
 
     &__title {
         margin-bottom: 3.5rem;
@@ -306,6 +322,102 @@ a {
                 padding: 7px 50px 7px 20px;
             }
 
+            &:active {
+                background-color: $orange;
+                border-radius: 5rem;
+                padding: 7px 50px 7px 20px;
+            }
+
         }
+    }
+}
+
+// Collect start
+.collect {
+    padding-top: 13.5rem;
+    background-color: $beige;
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        border-radius: 5rem;
+        background-color: $white;
+        padding: 7rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        row-gap: 3rem;
+
+        &-field {
+            display: flex;
+            flex-direction: column;
+            width: 50rem;
+        }
+
+        &-label {
+            font-size: 2rem;
+            line-height: 142%;
+            margin-bottom: 1rem;
+        }
+
+        &-input {
+            border-radius: 1rem;
+            border: 1px solid $beige2;
+            background: $beige;
+            gap: 1rem;
+
+            font-size: 2rem;
+            line-height: 142%;
+
+            padding: 2rem;
+
+            &::placeholder {
+                color: $gray;
+                font-size: 2rem;
+                line-height: 142%;
+            }
+
+            option {
+                color: $black;
+            }
+
+        }
+
+        &-textarea {
+            resize: none;
+            width: 100%;
+            padding: 2rem;
+            margin-bottom: 1rem;
+
+            border-radius: 1rem;
+            border: 1px solid $beige2;
+            background: $beige;
+
+            font-size: 2rem;
+            line-height: 142%;
+            max-height: 15.2rem;
+        }
+
+        &-input[type="radio"] {
+            zoom: 1.5;
+            color: $black;
+        }
+    }
+}
+
+select.collect__form-input {
+    appearance: none;
+    background-image: url('./images/ic-dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 2rem top 50%;
+    background-size: 2.6rem auto;
+
+    color: $gray;
+
+    &:focus {
+        color: $black;
     }
 }

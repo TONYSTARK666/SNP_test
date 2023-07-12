@@ -107,6 +107,77 @@
     </div>
     <!-- Choice end -->
 
+    <!-- Collect start -->
+    <div class="collect">
+        <div class="container">
+            <h2 class="collect__title title">Собери свой тур</h2>
+            <p class="collect__desc description">Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров</p>
+            <form class="collect__form">
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="name">Имя</label>
+                    <input type="text" id="name" class="collect__form-input" placeholder="Введите Ваше имя">
+                </fieldset>
+                
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="direction">Направление</label>
+                    <select name="direction" id="direction" class="collect__form-input">
+                        <option value="" style="display: none;">Куда хотите ехать</option>
+                        <option value="london">Лондон</option>
+                        <option value="japan">Япония</option>
+                        <option value="spain">Испания</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="email">Email</label>
+                    <input type="email" id="email" class="collect__form-input" placeholder="example@mail.com">
+                </fieldset>
+
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="number">Телефон</label>
+                    <input type="tel" id="number" class="collect__form-input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                </fieldset>
+
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="date1">Дата от</label>
+                    <input type="text" id="date1" class="collect__form-input" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label" for="date2">Дата до</label>
+                    <input type="text" id="date2" class="collect__form-input" placeholder="ДД.ММ.ГГГГ">
+                </fieldset>
+
+                <fieldset style="width: 100%;">
+                    <label class="collect__form-label" for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" class="collect__form-textarea"></textarea>
+                </fieldset>
+
+                
+                <fieldset class="collect__form-field">
+                    <label class="collect__form-label">Вам есть 18 лет?</label>
+                    <fieldset>
+                        <input type="radio" name="age" id="age1" class="collect__form-input">
+                        <label class="collect__form-label" for="age1">Да</label>
+                        <input type="radio" name="age" id="age2" class="collect__form-input">
+                        <label class="collect__form-label" for="age2">Нет</label>
+                    </fieldset>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="checkbox" id="lic" class="collect__form-input">
+                    <label class="collect__form-label" for="lic">Нажимая кнопку, я принимаю условия Лицензионного договора</label>
+                </fieldset>
+
+
+                <a href="#!" class="collect__form-find">Найти тур</a>
+                <a href="#!" class="collect__form-clear">Сбросить</a>
+
+            </form>
+        </div>
+    </div>
+    <!-- Collect end -->
+
     
 </body>
 </html>
