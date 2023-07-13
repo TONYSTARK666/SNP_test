@@ -286,6 +286,13 @@ a {
   font-size: 2rem;
   line-height: 142%;
   padding: 2rem;
+  transition: all 0.3s ease;
+}
+.collect__form-input:hover {
+  background: #F4F0E9;
+}
+.collect__form-input:focus {
+  border: 1px solid #A6A6A6;
 }
 .collect__form-input::-moz-placeholder {
   color: #A6A6A6;
@@ -311,10 +318,89 @@ a {
   font-size: 2rem;
   line-height: 142%;
   max-height: 15.2rem;
+  transition: all 0.3s ease;
+}
+.collect__form-textarea:hover {
+  background: #F4F0E9;
+}
+.collect__form-textarea:focus {
+  border: 1px solid #A6A6A6;
 }
 .collect__form-input[type=radio] {
-  zoom: 1.5;
+  display: none;
+}
+.collect__form-input[type=radio] + label {
+  padding: 1rem 1rem 1rem 3rem;
+  margin-right: 2.8rem;
+  background: url("./images/radiobutton.svg") no-repeat left;
+  cursor: pointer;
+}
+.collect__form-input[type=radio]:checked + label {
+  background: url("./images/radiobutton_c.svg") no-repeat left;
+}
+.collect__form-input[type=checkbox] {
+  display: none;
+}
+.collect__form-input[type=checkbox] + label {
+  color: #A6A6A6;
+  font-size: 1.7rem;
+  line-height: 142%;
+  letter-spacing: -0.17px;
+  background: url("./images/checkbox.svg") no-repeat left;
+  padding: 1rem 1rem 1rem 4.3rem;
+  cursor: pointer;
+}
+.collect__form-input[type=checkbox] + label span {
   color: #1B1F2B;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s ease;
+}
+.collect__form-input[type=checkbox] + label span:hover {
+  border-bottom: 0.1rem solid black;
+}
+.collect__form-input[type=checkbox] + label span:active {
+  border-bottom: 0.1rem solid #286562;
+  color: #286562;
+}
+.collect__form-input[type=checkbox]:checked + label {
+  background-image: url("./images/checkbox_c.svg");
+}
+.collect__form-find {
+  display: inline-block;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  background: #286562;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 142%;
+  width: 23.5rem;
+  margin-right: 2.5rem;
+  transition: all 0.3s ease;
+}
+.collect__form-find:hover {
+  background-color: #3B7E7B;
+}
+.collect__form-find:active {
+  background-color: #627F7E;
+}
+.collect__form-clear {
+  display: inline-block;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  background: #E0F0E5;
+  color: #286562;
+  font-size: 2rem;
+  line-height: 142%;
+  width: 23.5rem;
+  transition: all 0.3s ease;
+}
+.collect__form-clear:hover {
+  background-color: #F1F3F2;
+}
+.collect__form-clear:active {
+  background-color: #D9DFDB;
 }
 
 select.collect__form-input {
@@ -329,4 +415,10 @@ select.collect__form-input {
 }
 select.collect__form-input:focus {
   color: #1B1F2B;
+}
+select.collect__form-input:hover {
+  background-image: url("./images/ic-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 2rem top 50%;
+  background-size: 2.6rem auto;
 }/*# sourceMappingURL=style.css.map */
