@@ -545,3 +545,69 @@ select.collect__form-input {
         background-size: 2.6rem auto;
     }
 }
+
+// Review start
+
+.review {
+
+    padding-top: 13.4rem;
+    background-color: $beige;
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 57rem;
+        background-color: $beige2;
+        border-radius: 5rem;
+        padding: 4rem;
+
+        &-desc {
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 122%;
+            margin-bottom: 7rem;
+        }
+
+        &-person {
+            display: grid;
+            grid-template-areas: "name photo"
+                "tour photo";
+        }
+
+        &-name {
+            font-size: 3.5rem;
+            font-weight: 500;
+
+            grid-area: name;
+        }
+
+        &-tour {
+            color: $gray;
+            font-size: 1.7rem;
+            letter-spacing: -0.17px;
+            padding-top: .5rem;
+
+            grid-area: tour;
+        }
+
+        &-photo {
+            display: block;
+            border-radius: 10rem;
+            max-width: 7.5rem;
+
+            grid-area: photo;
+            justify-self: end;
+        }
+    }
+}
