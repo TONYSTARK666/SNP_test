@@ -12,6 +12,13 @@ $gray_op: #D9DFDB;
 $beige: #F9F7F4;
 $beige2: #F4F0E9;
 
+@mixin font ($fstyle: normal, $fsize: 1.6rem, $fweight: 400, $color: $black) {
+    font-style: $fstyle;
+    font-size: $fsize;
+    font-weight: $fweight;
+    color: $color;
+}
+
 
 // HTML
 html {
@@ -27,11 +34,8 @@ html {
 
 // Body
 body {
+    @include font();
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: $black;
 }
 
 
@@ -45,7 +49,8 @@ a {
     background: url("./images/header-img.jpg") no-repeat center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-img.jpg") no-repeat center;
     background-size: cover;
-    height: 111vh;
+    // height: 111vh;
+    height: 835px;
 
 }
 
@@ -57,19 +62,16 @@ a {
 
 // Title
 .title {
-    color: $black;
+    @include font(normal, 5.9rem, 700, $black);
     text-align: center;
-    font-size: 5.9rem;
-    font-weight: 700;
     line-height: 124%;
 }
 
 // Description
 .description {
-    color: $gray;
+    @include font(normal, 2rem, 400, $gray);
     text-align: center;
     margin: 0 auto;
-    font-size: 2rem;
     line-height: 142%;
 
     max-width: 41.8rem;
@@ -136,9 +138,7 @@ a {
 .intro {
 
     &__title {
-        color: $white;
-        font-weight: 700;
-        font-size: 9.6rem;
+        @include font(normal, 9.6rem, 700, $white);
         line-height: 109%;
         text-align: center;
         letter-spacing: 0.02em;
@@ -147,9 +147,8 @@ a {
     }
 
     &__desc {
-        color: $white;
+        @include font(normal, 2rem, 400, $white);
         text-align: center;
-        font-size: 2rem;
         line-height: 142%;
 
         max-width: 56.2rem;
@@ -167,8 +166,7 @@ a {
         background: $white;
         cursor: pointer;
 
-        color: $black;
-        font-size: 1.7rem;
+        @include font(normal, 1.7rem, 400, $black);
         line-height: 142%;
         letter-spacing: -0.17px;
 
@@ -209,8 +207,7 @@ a {
                 color: $black;
             }
 
-            font-size: 2.3rem;
-            font-weight: 700;
+            @include font(normal, 2.3rem, 700);
             line-height: 122%;
 
             margin-right: 3rem;
@@ -283,9 +280,7 @@ a {
             left: 5rem;
             z-index: 2;
 
-            color: $white;
-            font-size: 3.5rem;
-            font-weight: 500;
+            @include font(normal, 3.5rem, 500, $white);
             line-height: 122%;
         }
 
@@ -295,8 +290,7 @@ a {
             left: 5rem;
             z-index: 2;
 
-            color: $white;
-            font-size: 1.7rem;
+            @include font(normal, 1.7rem, 400, $white);
             line-height: 142%;
             letter-spacing: -0.17px;
         }
@@ -308,9 +302,7 @@ a {
             left: 3rem;
             z-index: 2;
 
-            color: $white;
-            font-size: 2.3rem;
-            font-weight: 700;
+            @include font(normal, 2.3rem, 700, $white);
             line-height: 122%;
             transition: all .3s ease;
 
@@ -608,6 +600,41 @@ select.collect__form-input {
 
             grid-area: photo;
             justify-self: end;
+        }
+    }
+}
+
+// Photo start
+
+.photo {
+    padding-top: 13.5rem;
+    background-color: $beige;
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__photos {
+        padding: 0 3rem;
+    }
+
+    &__big {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__pic {
+        height: 30.1rem;
+        border-radius: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__small {
+        display: flex;
+        gap: 3rem;
+
+        & img {
+            max-width: 35rem;
         }
     }
 }
