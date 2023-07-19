@@ -54,6 +54,32 @@ a {
   margin-bottom: 10rem;
 }
 
+.more {
+  padding: 7px 50px 7px 20px;
+  font-style: normal;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 122%;
+  transition: all 0.3s ease;
+}
+.more::after {
+  content: url("/images/arrow_bt.svg");
+  position: absolute;
+  top: 0.9rem;
+  left: 15.5rem;
+}
+.more:hover {
+  background-color: #286562;
+  border-radius: 5rem;
+  padding: 7px 50px 7px 20px;
+}
+.more:active {
+  background-color: #EFA501;
+  border-radius: 5rem;
+  padding: 7px 50px 7px 20px;
+}
+
 .header {
   padding-top: 3rem;
   margin-bottom: 14.5rem;
@@ -238,32 +264,9 @@ a {
 }
 .choice__card-more {
   position: absolute;
-  padding: 7px 50px 7px 20px;
   bottom: 4rem;
   left: 3rem;
   z-index: 2;
-  font-style: normal;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 122%;
-  transition: all 0.3s ease;
-}
-.choice__card-more::after {
-  content: url("/images/arrow_bt.svg");
-  position: absolute;
-  top: 0.9rem;
-  left: 15.5rem;
-}
-.choice__card-more:hover {
-  background-color: #286562;
-  border-radius: 5rem;
-  padding: 7px 50px 7px 20px;
-}
-.choice__card-more:active {
-  background-color: #EFA501;
-  border-radius: 5rem;
-  padding: 7px 50px 7px 20px;
 }
 
 .collect {
@@ -514,4 +517,98 @@ select.collect__form-input:hover {
 }
 .photo__small img {
   max-width: 35rem;
+}
+
+.history {
+  padding-top: 10rem;
+  background-color: #F9F7F4;
+}
+.history__title {
+  margin-bottom: 3rem;
+}
+.history__card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 56.7rem;
+  margin-bottom: 5rem;
+  border-radius: 5rem;
+}
+.history__card::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+}
+.history__card_img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.history__card:hover img {
+  transform: scale(1.2);
+}
+.history__card_title {
+  font-style: normal;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 122%;
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  z-index: 2;
+}
+.history__card_desc {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 142%;
+  position: absolute;
+  top: 13.7rem;
+  left: 6rem;
+  z-index: 2;
+  max-width: 55.4rem;
+}
+.history__card_list {
+  position: absolute;
+  top: 27.7rem;
+  z-index: 2;
+  left: 9rem;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 142%;
+  list-style: disc;
+}
+.history__card_more {
+  position: relative;
+  bottom: 8.9rem;
+  left: 4.1rem;
+  z-index: 2;
+}
+.history__card_social {
+  position: absolute;
+  bottom: 6rem;
+  right: 2.4rem;
+  z-index: 2;
+}
+.history__card_social a {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 142%;
+  margin-right: 3.5rem;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s ease;
+}
+.history__card_social a:hover {
+  border-bottom: 0.1rem solid #ffffff;
 }/*# sourceMappingURL=style.css.map */
