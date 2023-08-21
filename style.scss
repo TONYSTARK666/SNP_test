@@ -24,6 +24,7 @@ $beige2: #F4F0E9;
 html {
     box-sizing: border-box;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -618,27 +619,26 @@ select.collect__form-input {
     }
 
     &__photos {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        gap: 3rem;
         padding: 0 3rem;
     }
 
-    &__big {
-        display: flex;
-        gap: 3rem;
-    }
+    &__pic-b {
+        grid-column: span 5;
 
-    &__pic {
         height: 30.1rem;
+        width: 100%;
         border-radius: 5rem;
-        margin-bottom: 3rem;
     }
 
-    &__small {
-        display: flex;
-        gap: 3rem;
+    &__pic-s {
+        grid-column: span 4;
 
-        & img {
-            max-width: 35rem;
-        }
+        height: 30.1rem;
+        width: 100%;
+        border-radius: 5rem;
     }
 }
 
@@ -848,3 +848,6 @@ select.collect__form-input {
         }
     }
 }
+
+// Media
+@media screen and (width < 1024px) {}

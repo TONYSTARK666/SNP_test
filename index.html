@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,10 +24,10 @@
                 <a href="index.html" class="header__logo"><img src="./images/YourTour.svg" alt="YourTour"></a>
                 <nav class="header__nav">
                     <ul>
-                        <li class="header__nav-item"><a href="#!">Туры</a></li>
-                        <li class="header__nav-item"><a href="#!">Создать тур</a></li>
-                        <li class="header__nav-item"><a href="#!">Отзывы</a></li>
-                        <li class="header__nav-item"><a href="#!">Истории</a></li>
+                        <li class="header__nav-item"><a href="#choice">Туры</a></li>
+                        <li class="header__nav-item"><a href="#collect">Создать тур</a></li>
+                        <li class="header__nav-item"><a href="#review">Отзывы</a></li>
+                        <li class="header__nav-item"><a href="#history">Истории</a></li>
                     </ul>
                 </nav>
                 <a href="tel:+79999999999" class="header__phone">+7 999 999 99 99</a>
@@ -47,7 +47,7 @@
     </div>
 
     <!-- Choice start -->
-    <div class="choice">
+    <div class="choice" id="choice">
         <div class="container">
             <h2 class="choice__title title">
                 Выбери свой тур
@@ -108,7 +108,7 @@
     <!-- Choice end -->
 
     <!-- Collect start -->
-    <div class="collect">
+    <div class="collect" id="collect">
         <div class="container">
             <h2 class="collect__title title">Собери свой тур</h2>
             <p class="collect__desc description">Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров</p>
@@ -181,7 +181,7 @@
     <!-- Collect end -->
 
     <!-- Review start -->
-    <div class="review">
+    <div class="review" id="review">
         <div class="container">
             <h1 class="review__title title">Отзывы наших <br> путешественников</h1>
             <p class="review__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
@@ -215,31 +215,29 @@
         <h2 class="photo__title title">Фотографии путешествий</h2>
         <p class="photo__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
         <div class="photo__photos">
-            <div class="photo__big">
-                <img class="photo__pic" src="./images/photo-1.jpg" alt="photo1">
-                <img class="photo__pic" src="./images/photo-2.jpg" alt="photo2">
-                <img class="photo__pic" src="./images/photo-3.jpg" alt="photo3">
-                <img class="photo__pic" src="./images/photo-4.jpg" alt="photo4">
-            </div>
-            <div class="photo__small">
-                <img class="photo__pic" src="./images/photo-5.jpg" alt="photo5">
-                <img class="photo__pic" src="./images/photo-6.jpg" alt="photo6">
-                <img class="photo__pic" src="./images/photo-7.jpg" alt="photo7">
-                <img class="photo__pic" src="./images/photo-8.png" alt="photo8">
-                <img class="photo__pic" src="./images/photo-13.jpg" alt="photo9">
-            </div>
-            <div class="photo__big">
-                <img class="photo__pic" src="./images/photo-9.jpg" alt="photo10">
-                <img class="photo__pic" src="./images/photo-10.jpg" alt="photo11">
-                <img class="photo__pic" src="./images/photo-11.jpg" alt="photo12">
-                <img class="photo__pic" src="./images/photo-12.jpg" alt="photo13">
-            </div>
+                <img class="photo__pic-b" src="./images/photo-1.jpg" alt="photo1">
+                <img class="photo__pic-b" src="./images/photo-2.jpg" alt="photo2">
+                <img class="photo__pic-b" src="./images/photo-3.jpg" alt="photo3">
+                <img class="photo__pic-b" src="./images/photo-4.jpg" alt="photo4">
+            <!-- <div class="photo__small"> -->
+                <img class="photo__pic-s" src="./images/photo-5.jpg" alt="photo5">
+                <img class="photo__pic-s" src="./images/photo-6.jpg" alt="photo6">
+                <img class="photo__pic-s" src="./images/photo-7.jpg" alt="photo7">
+                <img class="photo__pic-s" src="./images/photo-8.png" alt="photo8">
+                <img class="photo__pic-s" src="./images/photo-13.jpg" alt="photo9">
+            <!-- </div> -->
+            <!-- <div class="photo__big"> -->
+                <img class="photo__pic-b" src="./images/photo-9.jpg" alt="photo10">
+                <img class="photo__pic-b" src="./images/photo-10.jpg" alt="photo11">
+                <img class="photo__pic-b" src="./images/photo-11.jpg" alt="photo12">
+                <img class="photo__pic-b" src="./images/photo-12.jpg" alt="photo13">
+            <!-- </div> -->
         </div>
     </div>
     <!-- Photo end -->
     
     <!-- History start -->
-    <div class="history">
+    <div class="history" id="history">
         <div class="container">
             <h2 class="history__title title">Истории путешествий</h2>
             <p class="history__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>

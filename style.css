@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -500,23 +501,22 @@ select.collect__form-input:hover {
   margin-bottom: 3rem;
 }
 .photo__photos {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 3rem;
   padding: 0 3rem;
 }
-.photo__big {
-  display: flex;
-  gap: 3rem;
-}
-.photo__pic {
+.photo__pic-b {
+  grid-column: span 5;
   height: 30.1rem;
+  width: 100%;
   border-radius: 5rem;
-  margin-bottom: 3rem;
 }
-.photo__small {
-  display: flex;
-  gap: 3rem;
-}
-.photo__small img {
-  max-width: 35rem;
+.photo__pic-s {
+  grid-column: span 4;
+  height: 30.1rem;
+  width: 100%;
+  border-radius: 5rem;
 }
 
 .history {
