@@ -701,4 +701,23 @@ select.collect__form-input:hover {
 .footer__item img {
   position: relative;
   top: -0.3rem;
+}
+
+@media screen and (width < 1170px) {
+  .header__container {
+    max-width: 910px;
+    justify-content: space-between;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__phone {
+    margin-left: 0;
+  }
+  .header__nav-item {
+    margin-right: 3rem;
+  }
+  .intro__desc {
+    max-width: 44.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

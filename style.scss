@@ -850,4 +850,29 @@ select.collect__form-input {
 }
 
 // Media
-@media screen and (width < 1024px) {}
+@media screen and (width < 1170px) {
+    .header {
+        &__container {
+            max-width: 910px;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            margin-right: 0;
+        }
+
+        &__phone {
+            margin-left: 0;
+        }
+
+        &__nav-item {
+            margin-right: 3rem;
+        }
+    }
+
+    .intro {
+        &__desc {
+            max-width: 44.2rem;
+        }
+    }
+}
