@@ -211,7 +211,7 @@ a {
 }
 .choice__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 3rem;
 }
 .choice__card {
@@ -219,7 +219,7 @@ a {
   cursor: pointer;
   width: 37rem;
   height: 53.1rem;
-  position: relative;
+  grid-column: span 2;
   border-radius: 5rem;
   overflow: hidden;
 }
@@ -502,20 +502,29 @@ select.collect__form-input:hover {
 }
 .photo__photos {
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
   gap: 3rem;
   padding: 0 3rem;
 }
+.photo__big {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.photo__small {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+}
 .photo__pic-b {
-  grid-column: span 5;
+  grid-column: span 1;
   height: 30.1rem;
-  width: 100%;
+  max-width: 100%;
   border-radius: 5rem;
 }
 .photo__pic-s {
-  grid-column: span 4;
+  grid-column: span 1;
   height: 30.1rem;
-  width: 100%;
+  max-width: 100%;
   border-radius: 5rem;
 }
 
@@ -550,6 +559,7 @@ select.collect__form-input:hover {
 }
 .history__card_img {
   width: 100%;
+  height: inherit;
   transition: all 0.3s ease;
 }
 .history__card:hover img {
@@ -703,7 +713,7 @@ select.collect__form-input:hover {
   top: -0.3rem;
 }
 
-@media screen and (width < 1170px) {
+@media screen and (width < 1180px) {
   .header__container {
     max-width: 910px;
     justify-content: space-between;
@@ -717,7 +727,48 @@ select.collect__form-input:hover {
   .header__nav-item {
     margin-right: 3rem;
   }
+  .container {
+    max-width: 1000px;
+  }
   .intro__desc {
     max-width: 44.2rem;
+  }
+  .choice__card {
+    width: 100%;
+  }
+  .choice__card img {
+    height: inherit;
+  }
+  .collect__form {
+    padding: 6rem;
+  }
+  .collect__form-field {
+    max-width: 48%;
+  }
+  .review__cards {
+    gap: 1.8rem;
+  }
+  .review__card {
+    max-width: 49%;
+  }
+  .photo__photos {
+    padding: 0 2rem;
+  }
+  .photo__big {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .photo__pic-b:nth-child(2) {
+    display: none;
+  }
+  .photo__small {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .photo__pic-s:nth-child(3) {
+    display: none;
+  }
+  .footer__end-container {
+    max-width: 100rem;
   }
 }/*# sourceMappingURL=style.css.map */
