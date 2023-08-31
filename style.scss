@@ -630,7 +630,6 @@ select.collect__form-input {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
-
     }
 
     &__small {
@@ -939,9 +938,16 @@ select.collect__form-input {
             gap: 2rem;
         }
 
-        &__pic-b {
+        &__pic-b.row1 {
 
             &:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &__pic-b.row3 {
+
+            &:nth-child(4) {
                 display: none;
             }
         }
@@ -962,6 +968,60 @@ select.collect__form-input {
     .footer {
         &__end-container {
             max-width: 100rem;
+        }
+    }
+}
+
+// Media 1024
+@media screen and (width < 1024px) {
+    .container {
+        max-width: 91.8rem;
+    }
+
+    .choice {
+        &__cards {
+            gap: 1.8rem;
+        }
+
+        &__card {
+            grid-column: span 3;
+
+            &-price {
+                top: 11rem;
+            }
+        }
+    }
+
+    .collect {
+        &__form {
+            column-gap: 2.5rem;
+            row-gap: 2.9rem;
+        }
+    }
+
+    .history {
+        padding-top: 13rem;
+
+        &__card_desc {
+            top: 14rem;
+        }
+
+        &__card_list {
+            top: 28.2rem;
+        }
+
+        &__card_more {
+            bottom: 8.7rem;
+        }
+
+        &__card_social {
+            bottom: 5.8rem;
+        }
+    }
+
+    .footer {
+        &__end-container {
+            max-width: 91.8rem;
         }
     }
 }

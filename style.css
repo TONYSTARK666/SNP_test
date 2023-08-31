@@ -758,7 +758,10 @@ select.collect__form-input:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  .photo__pic-b:nth-child(2) {
+  .photo__pic-b.row1:nth-child(2) {
+    display: none;
+  }
+  .photo__pic-b.row3:nth-child(4) {
     display: none;
   }
   .photo__small {
@@ -770,5 +773,42 @@ select.collect__form-input:hover {
   }
   .footer__end-container {
     max-width: 100rem;
+  }
+}
+@media screen and (width < 1024px) {
+  .container {
+    max-width: 91.8rem;
+  }
+  .choice__cards {
+    gap: 1.8rem;
+  }
+  .choice__card {
+    grid-column: span 3;
+  }
+  .choice__card-price {
+    top: 11rem;
+  }
+  .collect__form {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 2.9rem;
+  }
+  .history {
+    padding-top: 13rem;
+  }
+  .history__card_desc {
+    top: 14rem;
+  }
+  .history__card_list {
+    top: 28.2rem;
+  }
+  .history__card_more {
+    bottom: 8.7rem;
+  }
+  .history__card_social {
+    bottom: 5.8rem;
+  }
+  .footer__end-container {
+    max-width: 91.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
