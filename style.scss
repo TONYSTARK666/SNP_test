@@ -1076,8 +1076,21 @@ select.collect__form-input {
 
 // Media 600px по макету 360
 @media screen and (width < 600px) {
+
     .title {
         font-size: 4.4rem;
+        line-height: 1;
+    }
+
+    .container {
+        max-width: 318px;
+    }
+
+    .more {
+        &::after {
+            top: 0.3rem;
+            left: 14.7rem;
+        }
     }
 
     .start {
@@ -1116,9 +1129,154 @@ select.collect__form-input {
 
     .choice {
         padding-top: 9.375rem;
+
+        &__title {
+            margin-bottom: 4.4rem;
+        }
+
+        &__list {
+            gap: 1.25rem;
+            padding-bottom: 6.5rem;
+        }
+
+        &__list-item {
+            font-size: 2rem;
+            margin-right: 1.25rem;
+        }
+
+        &__cards {
+            gap: 2.25rem;
+        }
+
+        &__card {
+            grid-column: span 6;
+            height: 39.75rem;
+            border-radius: 20px;
+
+            &-title {
+                font-size: 2.875rem;
+                top: 3rem;
+                left: 3rem;
+            }
+
+            &-price {
+                font-size: 2rem;
+                top: 8rem;
+                left: 3rem;
+            }
+
+            &-more {
+                bottom: 2.6rem;
+                left: 0.5rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .collect {
+        padding-top: 9.5rem;
+
+        &__desc {
+            margin-bottom: 4.5rem;
+        }
+
+        &__form {
+            padding: 2.5rem;
+            row-gap: 3.9rem;
+
+            &-input {
+                padding: 1.25rem;
+            }
+
+            &-label {
+                line-height: 135%;
+            }
+
+            &-textarea {
+                padding: 1.25rem;
+                max-height: 16.2rem;
+            }
+
+            &-input[type=radio]+label {
+                padding-left: 4rem;
+                background-size: 2.25rem;
+                margin-right: 1.8rem;
+            }
+
+            &-input[type=checkbox]+label {
+                background-size: 2.25rem;
+                font-size: 2rem;
+            }
+
+            &-find {
+                width: 134px;
+                margin-top: 2.3rem;
+            }
+
+            &-clear {
+                width: 134px;
+                margin-top: 2.3rem;
+                margin-right: 1.2rem;
+            }
+
+            &-buttons {
+                display: flex;
+            }
+        }
+    }
+
+    .review {
+        padding-top: 12.4rem;
+
+        &__desc {
+            margin-bottom: 6rem;
+        }
+
+        &__card {
+            padding: 2.9rem;
+
+            &-desc {
+                font-size: 2rem;
+                line-height: 142%;
+                margin-bottom: 7.5rem;
+            }
+
+            &-name {
+                font-size: 2.875rem;
+            }
+        }
     }
 
     .photo {
+
+        padding-top: 8.5rem;
+
+        &__desc {
+            margin-bottom: 6rem;
+        }
+
+        &__photos {
+            gap: 2.5rem;
+        }
+
+        &__big {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__small {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__pic-b {
+            height: 110px;
+            border-radius: 2.5rem;
+        }
+
+        &__pic-s {
+            height: 110px;
+            border-radius: 2.5rem;
+        }
+
         &__pic-b.row1 {
 
             &:nth-child(3) {
@@ -1141,7 +1299,94 @@ select.collect__form-input {
         }
     }
 
+    .history {
+        padding-top: 9.5rem;
+
+        &__desc {
+            margin-bottom: 6rem;
+        }
+
+        &__card {
+
+            margin-bottom: 3rem;
+
+            &_title {
+                top: 4rem;
+                left: 4rem;
+                font-size: 2.875rem;
+                max-width: 150px;
+            }
+
+            &_desc {
+                top: 13.4rem;
+                left: 3.8rem;
+            }
+
+            &_list {
+                top: 33.5rem;
+                left: 6.5rem;
+            }
+
+            &_social {
+                display: none;
+            }
+
+            &_more {
+                left: 1.1rem;
+                bottom: 6.7rem;
+            }
+        }
+    }
+
     .footer {
-        display: none;
+
+        padding-top: 9.5rem;
+
+        &__cta {
+
+            margin-bottom: 9.5rem;
+
+            flex-direction: column;
+            gap: 30px;
+
+            &_img {
+                max-width: 130px;
+                border-radius: 2.5rem;
+            }
+
+            &_title {
+                font-size: 2.875rem;
+                text-align: center;
+            }
+
+            &_desc {
+                text-align: center;
+            }
+        }
+
+        &__end {
+            &-container {
+                flex-direction: column;
+                height: 11.8rem;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+
+        &__item {
+            margin-left: 0.5rem;
+        }
+
+        &__item a {
+            font-size: 2rem;
+        }
+
+        &__item img {
+            width: 2.5rem;
+        }
+
+        &__list_social {
+            align-self: center;
+        }
     }
 }

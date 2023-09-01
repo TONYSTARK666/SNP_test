@@ -841,6 +841,14 @@ select.collect__form-input:hover {
 @media screen and (width < 600px) {
   .title {
     font-size: 4.4rem;
+    line-height: 1;
+  }
+  .container {
+    max-width: 318px;
+  }
+  .more::after {
+    top: 0.3rem;
+    left: 14.7rem;
   }
   .start {
     height: 481px;
@@ -870,6 +878,121 @@ select.collect__form-input:hover {
   .choice {
     padding-top: 9.375rem;
   }
+  .choice__title {
+    margin-bottom: 4.4rem;
+  }
+  .choice__list {
+    gap: 1.25rem;
+    padding-bottom: 6.5rem;
+  }
+  .choice__list-item {
+    font-size: 2rem;
+    margin-right: 1.25rem;
+  }
+  .choice__cards {
+    gap: 2.25rem;
+  }
+  .choice__card {
+    grid-column: span 6;
+    height: 39.75rem;
+    border-radius: 20px;
+  }
+  .choice__card-title {
+    font-size: 2.875rem;
+    top: 3rem;
+    left: 3rem;
+  }
+  .choice__card-price {
+    font-size: 2rem;
+    top: 8rem;
+    left: 3rem;
+  }
+  .choice__card-more {
+    bottom: 2.6rem;
+    left: 0.5rem;
+    font-size: 2rem;
+  }
+  .collect {
+    padding-top: 9.5rem;
+  }
+  .collect__desc {
+    margin-bottom: 4.5rem;
+  }
+  .collect__form {
+    padding: 2.5rem;
+    row-gap: 3.9rem;
+  }
+  .collect__form-input {
+    padding: 1.25rem;
+  }
+  .collect__form-label {
+    line-height: 135%;
+  }
+  .collect__form-textarea {
+    padding: 1.25rem;
+    max-height: 16.2rem;
+  }
+  .collect__form-input[type=radio] + label {
+    padding-left: 4rem;
+    background-size: 2.25rem;
+    margin-right: 1.8rem;
+  }
+  .collect__form-input[type=checkbox] + label {
+    background-size: 2.25rem;
+    font-size: 2rem;
+  }
+  .collect__form-find {
+    width: 134px;
+    margin-top: 2.3rem;
+  }
+  .collect__form-clear {
+    width: 134px;
+    margin-top: 2.3rem;
+    margin-right: 1.2rem;
+  }
+  .collect__form-buttons {
+    display: flex;
+  }
+  .review {
+    padding-top: 12.4rem;
+  }
+  .review__desc {
+    margin-bottom: 6rem;
+  }
+  .review__card {
+    padding: 2.9rem;
+  }
+  .review__card-desc {
+    font-size: 2rem;
+    line-height: 142%;
+    margin-bottom: 7.5rem;
+  }
+  .review__card-name {
+    font-size: 2.875rem;
+  }
+  .photo {
+    padding-top: 8.5rem;
+  }
+  .photo__desc {
+    margin-bottom: 6rem;
+  }
+  .photo__photos {
+    gap: 2.5rem;
+  }
+  .photo__big {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .photo__small {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .photo__pic-b {
+    height: 110px;
+    border-radius: 2.5rem;
+  }
+  .photo__pic-s {
+    height: 110px;
+    border-radius: 2.5rem;
+  }
   .photo__pic-b.row1:nth-child(3) {
     display: none;
   }
@@ -879,7 +1002,71 @@ select.collect__form-input:hover {
   .photo__pic-s:nth-child(2) {
     display: none;
   }
-  .footer {
+  .history {
+    padding-top: 9.5rem;
+  }
+  .history__desc {
+    margin-bottom: 6rem;
+  }
+  .history__card {
+    margin-bottom: 3rem;
+  }
+  .history__card_title {
+    top: 4rem;
+    left: 4rem;
+    font-size: 2.875rem;
+    max-width: 150px;
+  }
+  .history__card_desc {
+    top: 13.4rem;
+    left: 3.8rem;
+  }
+  .history__card_list {
+    top: 33.5rem;
+    left: 6.5rem;
+  }
+  .history__card_social {
     display: none;
+  }
+  .history__card_more {
+    left: 1.1rem;
+    bottom: 6.7rem;
+  }
+  .footer {
+    padding-top: 9.5rem;
+  }
+  .footer__cta {
+    margin-bottom: 9.5rem;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer__cta_img {
+    max-width: 130px;
+    border-radius: 2.5rem;
+  }
+  .footer__cta_title {
+    font-size: 2.875rem;
+    text-align: center;
+  }
+  .footer__cta_desc {
+    text-align: center;
+  }
+  .footer__end-container {
+    flex-direction: column;
+    height: 11.8rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer__item {
+    margin-left: 0.5rem;
+  }
+  .footer__item a {
+    font-size: 2rem;
+  }
+  .footer__item img {
+    width: 2.5rem;
+  }
+  .footer__list_social {
+    align-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
