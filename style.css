@@ -84,6 +84,24 @@ a {
 .header {
   padding-top: 3rem;
   margin-bottom: 14.5rem;
+  transition: all 1s ease;
+}
+.header__fixed {
+  position: fixed;
+  width: 100%;
+  background: rgba(243, 239, 232, 0.6);
+  -webkit-backdrop-filter: blur(27px);
+          backdrop-filter: blur(27px);
+  padding: 20px;
+  z-index: 10;
+}
+.header__fixed a,
+.header__fixed .header__nav ul a,
+.header__fixed .header__logo {
+  color: #1B1F2B;
+}
+.header__fixed .header__nav-item:hover {
+  border-bottom: 2px solid #1B1F2B;
 }
 .header__container {
   max-width: 1168px;
@@ -122,6 +140,9 @@ a {
   font-size: 2rem;
 }
 
+.intro__fixed {
+  padding-top: 210px;
+}
 .intro__title {
   font-style: normal;
   font-size: 9.6rem;

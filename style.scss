@@ -114,6 +114,29 @@ a {
     padding-top: 3rem;
     margin-bottom: 14.5rem;
 
+    transition: all 1s ease;
+
+    &__fixed {
+        position: fixed;
+        width: 100%;
+
+        background: rgba(243, 239, 232, 0.60);
+        backdrop-filter: blur(27px);
+
+        padding: 20px;
+        z-index: 10;
+
+        a,
+        .header__nav ul a,
+        .header__logo {
+            color: $black;
+        }
+
+        .header__nav-item:hover {
+            border-bottom: 2px solid $black;
+        }
+    }
+
     &__container {
         max-width: 1168px;
         margin: 0 auto;
@@ -164,6 +187,10 @@ a {
 // Intro styles
 
 .intro {
+
+    &__fixed {
+        padding-top: 210px;
+    }
 
     &__title {
         @include font(normal, 9.6rem, 700, $white);
