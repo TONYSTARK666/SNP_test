@@ -1,321 +1,324 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Пора в путешествие вместе с нами!">
-    <meta name="keywords" content="YourTour, Путешествия">
-    <title>YourTour</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Пора в путешествие вместе с нами!" />
+        <meta name="keywords" content="YourTour, Путешествия" />
+        <title>YourTour</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="start">
+            <!-- Header start -->
+            <header class="header">
+                <div class="header__container">
+                    <a href="index.html" class="header__logo"><img src="./images/YourTour.svg" alt="YourTour" /></a>
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="header__nav-item"><a href="#choice">Туры</a></li>
+                            <li class="header__nav-item"><a href="#collect">Создать тур</a></li>
+                            <li class="header__nav-item"><a href="#review">Отзывы</a></li>
+                            <li class="header__nav-item"><a href="#history">Истории</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+79999999999" class="header__phone">+7 999 999 99 99</a>
+                </div>
+            </header>
+            <!-- Header end -->
 
-</head>
-<body>
-
-    <div class="start">
-        <!-- Header start -->
-        <header class="header">
-            <div class="header__container">
-                <a href="index.html" class="header__logo"><img src="./images/YourTour.svg" alt="YourTour"></a>
-                <nav class="header__nav">
-                    <ul>
-                        <li class="header__nav-item"><a href="#choice">Туры</a></li>
-                        <li class="header__nav-item"><a href="#collect">Создать тур</a></li>
-                        <li class="header__nav-item"><a href="#review">Отзывы</a></li>
-                        <li class="header__nav-item"><a href="#history">Истории</a></li>
-                    </ul>
-                </nav>
-                <a href="tel:+79999999999" class="header__phone">+7 999 999 99 99</a>
+            <!-- Intro start -->
+            <div class="intro">
+                <div class="container">
+                    <h1 class="intro__title">Идеальные путешествия существуют</h1>
+                    <p class="intro__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                    <a href="#!" class="intro__button">Найти тур</a>
+                </div>
             </div>
-        </header>
-        <!-- Header end -->
+            <!-- Intro end -->
+        </div>
 
-        <!-- Intro start -->
-        <div class="intro">
+        <!-- Choice start -->
+        <div class="choice" id="choice">
             <div class="container">
-                <h1 class="intro__title">Идеальные путешествия существуют</h1>
-                <p class="intro__desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-                <a href="#!" class="intro__button">Найти тур</a>
-            </div>
-        </div>
-        <!-- Intro end -->
-    </div>
-
-    <!-- Choice start -->
-    <div class="choice" id="choice">
-        <div class="container">
-            <h2 class="choice__title title">
-                Выбери свой тур
-            </h2>
-            <ul class="choice__list">
-                <li class="choice__list-item choice__item-active"><a href="#!">Популярные</a></li>
-                <li class="choice__list-item"><a href="#!">Авторские</a></li>
-                <li class="choice__list-item"><a href="#!">Походы</a></li>
-                <li class="choice__list-item"><a href="#!">Сплавы</a></li>
-                <li class="choice__list-item"><a href="#!">Велопрогулки</a></li>
-            </ul>
-            <div class="choice__cards">
-                <!-- 1 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-1.jpg" alt="tour1">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
-                </div>
-                <!-- 2 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-2.jpg" alt="tour2">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
-                </div>
-                <!-- 3 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-3.jpg" alt="tour3">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
-                </div>
-                <!-- 4 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-4.jpg" alt="tour4">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
-                </div>
-                <!-- 5 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-5.jpg" alt="tour5">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
-                </div>
-                <!-- 6 card -->
-                <div class="choice__card">
-                    <img src="./images/card_tour_photo-6.jpg" alt="tour6">
-                    <h3 class="choice__card-title">Путешествие в горы</h3>
-                    <p class="choice__card-price">от 80 000 руб</p>
-                    <a href="#!" class="choice__card-more more">Подробнее</a>
+                <h2 class="choice__title title"> Выбери свой тур </h2>
+                <ul class="choice__list">
+                    <li class="choice__list-item choice__item-active"><a href="#!">Популярные</a></li>
+                    <li class="choice__list-item"><a href="#!">Авторские</a></li>
+                    <li class="choice__list-item"><a href="#!">Походы</a></li>
+                    <li class="choice__list-item"><a href="#!">Сплавы</a></li>
+                    <li class="choice__list-item"><a href="#!">Велопрогулки</a></li>
+                </ul>
+                <div class="choice__cards">
+                    <!-- 1 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-1.jpg" alt="tour1" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
+                    <!-- 2 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-2.jpg" alt="tour2" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
+                    <!-- 3 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-3.jpg" alt="tour3" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
+                    <!-- 4 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-4.jpg" alt="tour4" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
+                    <!-- 5 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-5.jpg" alt="tour5" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
+                    <!-- 6 card -->
+                    <div class="choice__card">
+                        <img src="./images/card_tour_photo-6.jpg" alt="tour6" />
+                        <h3 class="choice__card-title">Путешествие в горы</h3>
+                        <p class="choice__card-price">от 80 000 руб</p>
+                        <a href="#!" class="choice__card-more more">Подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Choice end -->
+        <!-- Choice end -->
 
-    <!-- Collect start -->
-    <div class="collect" id="collect">
-        <div class="container">
-            <h2 class="collect__title title">Собери свой тур</h2>
-            <p class="collect__desc description">Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров</p>
-            <form class="collect__form">
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="name">Имя</label>
-                    <input type="text" id="name" class="collect__form-input" placeholder="Введите Ваше имя">
-                </fieldset>
-                
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="direction">Направление</label>
-                    <select name="direction" id="direction" class="collect__form-input select">
-                        <option value="" style="display: none;">Куда хотите ехать</option>
-                        <option value="london">Лондон</option>
-                        <option value="japan">Япония</option>
-                        <option value="spain">Испания</option>
-                    </select>
-                </fieldset>
-                
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="email">Email</label>
-                    <input type="email" id="email" class="collect__form-input" placeholder="example@mail.com">
-                </fieldset>
-
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="number">Телефон</label>
-                    <input type="tel" id="number" class="collect__form-input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
-                </fieldset>
-
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="date1">Дата от</label>
-                    <input type="text" id="date1" class="collect__form-input" placeholder="ДД.ММ.ГГГГ">
-                </fieldset>
-
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label" for="date2">Дата до</label>
-                    <input type="text" id="date2" class="collect__form-input" placeholder="ДД.ММ.ГГГГ">
-                </fieldset>
-
-                <fieldset style="width: 100%;">
-                    <label class="collect__form-label" for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" class="collect__form-textarea"></textarea>
-                </fieldset>
-
-                
-                <fieldset class="collect__form-field">
-                    <label class="collect__form-label">Вам есть 18 лет?</label>
-                    <fieldset>
-                        <input type="radio" name="age" id="age1" class="collect__form-input">
-                        <label class="collect__form-label radio" for="age1">Да</label>
-                        <input type="radio" name="age" id="age2" class="collect__form-input">
-                        <label class="collect__form-label radio" for="age2">Нет</label>
+        <!-- Collect start -->
+        <div class="collect" id="collect">
+            <div class="container">
+                <h2 class="collect__title title">Собери свой тур</h2>
+                <p class="collect__desc description"
+                    >Идейные соображения высшего порядка, <br />
+                    а также рамки и место обучения кадров</p
+                >
+                <form class="collect__form">
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="name">Имя</label>
+                        <input type="text" id="name" class="collect__form-input" placeholder="Введите Ваше имя" />
                     </fieldset>
-                </fieldset>
-                
-                <fieldset>
-                    <input type="checkbox" id="lic" class="collect__form-input">
-                    <label class="collect__form-label" for="lic">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></label>
-                </fieldset>
 
-                <fieldset class="collect__form-buttons" style="width: 100%; margin-top: 5px;">
-                    <a href="#!" class="collect__form-find">Найти тур</a>
-                    <a href="#!" class="collect__form-clear">Сбросить</a>
-                </fieldset>
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="direction">Направление</label>
+                        <select name="direction" id="direction" class="collect__form-input select">
+                            <option value="" style="display: none">Куда хотите ехать</option>
+                            <option value="london">Лондон</option>
+                            <option value="japan">Япония</option>
+                            <option value="spain">Испания</option>
+                        </select>
+                    </fieldset>
 
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="email">Email</label>
+                        <input type="email" id="email" class="collect__form-input" placeholder="example@mail.com" />
+                    </fieldset>
 
-            </form>
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="number">Телефон</label>
+                        <input type="tel" id="number" class="collect__form-input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" />
+                    </fieldset>
+
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="date1">Дата от</label>
+                        <input type="text" id="date1" class="collect__form-input" placeholder="ДД.ММ.ГГГГ" />
+                    </fieldset>
+
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label" for="date2">Дата до</label>
+                        <input type="text" id="date2" class="collect__form-input" placeholder="ДД.ММ.ГГГГ" />
+                    </fieldset>
+
+                    <fieldset style="width: 100%">
+                        <label class="collect__form-label" for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" class="collect__form-textarea"></textarea>
+                    </fieldset>
+
+                    <fieldset class="collect__form-field">
+                        <label class="collect__form-label">Вам есть 18 лет?</label>
+                        <fieldset>
+                            <input type="radio" name="age" id="age1" class="collect__form-input" />
+                            <label class="collect__form-label radio" for="age1">Да</label>
+                            <input type="radio" name="age" id="age2" class="collect__form-input" />
+                            <label class="collect__form-label radio" for="age2">Нет</label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <input type="checkbox" id="lic" class="collect__form-input" />
+                        <label class="collect__form-label" for="lic">Нажимая кнопку, я принимаю условия <span>Лицензионного договора</span></label>
+                    </fieldset>
+
+                    <fieldset class="collect__form-buttons" style="width: 100%; margin-top: 5px">
+                        <a href="#!" class="collect__form-find">Найти тур</a>
+                        <a href="#!" class="collect__form-clear">Сбросить</a>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-    </div>
-    <!-- Collect end -->
+        <!-- Collect end -->
 
-    <!-- Review start -->
-    <div class="review" id="review">
-        <div class="container">
-            <h1 class="review__title title">Отзывы наших <br> путешественников</h1>
-            <p class="review__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-            <div class="review__cards">
+        <!-- Review start -->
+        <div class="review" id="review">
+            <div class="container">
+                <h1 class="review__title title"
+                    >Отзывы наших <br />
+                    путешественников</h1
+                >
+                <p class="review__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+                <div class="review__cards">
+                    <div class="review__card">
+                        <p class="review__card-desc"
+                            >Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало
+                            повседневной работы по формированию позиции позволяет оценить значение модели развития.</p
+                        >
+                        <div class="review__card-person">
+                            <p class="review__card-name">Мария</p>
+                            <p class="review__card-tour">Тур: Вдали от дома</p>
+                            <img class="review__card-photo" src="./images/review_1.jpg" alt="Maria" />
+                        </div>
+                    </div>
 
-                <div class="review__card">
-                    <p class="review__card-desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
-                    <div class="review__card-person">
-                        <p class="review__card-name">Мария</p>
-                        <p class="review__card-tour">Тур: Вдали от дома</p>
-                        <img class="review__card-photo" src="./images/review_1.jpg" alt="Maria">
+                    <div class="review__card">
+                        <p class="review__card-desc"
+                            >Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. <br />
+                            <br />
+                            Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что
+                            реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p
+                        >
+                        <div class="review__card-person">
+                            <p class="review__card-name">Павел</p>
+                            <p class="review__card-tour">Тур: Путешествие в горы </p>
+                            <img class="review__card-photo" src="./images/review_2.jpg" alt="Pavel" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review end -->
+
+        <!-- Photo start -->
+        <div class="photo">
+            <h2 class="photo__title title">Фотографии путешествий</h2>
+            <p class="photo__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <div class="photo__photos">
+                <div class="photo__big">
+                    <img class="photo__pic-b row1" src="./images/photo-1.jpg" alt="photo1" />
+                    <img class="photo__pic-b row1" src="./images/photo-2.jpg" alt="photo2" />
+                    <img class="photo__pic-b row1" src="./images/photo-3.jpg" alt="photo3" />
+                    <img class="photo__pic-b row1" src="./images/photo-4.jpg" alt="photo4" />
+                </div>
+                <div class="photo__small">
+                    <img class="photo__pic-s" src="./images/photo-5.jpg" alt="photo5" />
+                    <img class="photo__pic-s" src="./images/photo-6.jpg" alt="photo6" />
+                    <img class="photo__pic-s" src="./images/photo-7.jpg" alt="photo7" />
+                    <img class="photo__pic-s" src="./images/photo-8.png" alt="photo8" />
+                    <img class="photo__pic-s" src="./images/photo-13.jpg" alt="photo9" />
+                </div>
+                <div class="photo__big">
+                    <img class="photo__pic-b row3" src="./images/photo-9.jpg" alt="photo10" />
+                    <img class="photo__pic-b row3" src="./images/photo-10.jpg" alt="photo11" />
+                    <img class="photo__pic-b row3" src="./images/photo-11.jpg" alt="photo12" />
+                    <img class="photo__pic-b row3" src="./images/photo-12.jpg" alt="photo13" />
+                </div>
+            </div>
+        </div>
+        <!-- Photo end -->
+
+        <!-- History start -->
+        <div class="history" id="history">
+            <div class="container">
+                <h2 class="history__title title">Истории путешествий</h2>
+                <p class="history__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+
+                <div class="history__card">
+                    <img src="./images/story photo-1.jpg" alt="story1" class="history__card_img" />
+                    <h3 class="history__card_title">Автостопом в Стамбул</h3>
+                    <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                    <ul class="history__card_list">
+                        <li class="history__card_item">вкусная еда</li>
+                        <li class="history__card_item">дешевый транспорт</li>
+                        <li class="history__card_item">красивый город.</li>
+                    </ul>
+                    <a href="#!" class="history__card_more more">Подробнее</a>
+                    <div class="history__card_social">
+                        <a href="#!" class="history__card-inst">instagram</a>
+                        <a href="#!" class="history__card-face">facebook</a>
+                        <a href="#!" class="history__card-youtube">YouTube</a>
                     </div>
                 </div>
 
-                <div class="review__card">
-                    <p class="review__card-desc">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. <br> <br>
-                    Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
-                    <div class="review__card-person">
-                        <p class="review__card-name">Павел</p>
-                        <p class="review__card-tour">Тур: Путешествие в горы </p>
-                        <img class="review__card-photo" src="./images/review_2.jpg" alt="Pavel">
+                <div class="history__card">
+                    <img src="./images/story photo-2.jpg" alt="story2" class="history__card_img" />
+                    <h3 class="history__card_title">Автостопом в Стамбул</h3>
+                    <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                    <a href="#!" class="history__card_more more">Подробнее</a>
+                    <div class="history__card_social">
+                        <a href="#!" class="history__card-inst">instagram</a>
+                        <a href="#!" class="history__card-vk">ВКонтакте</a>
+                    </div>
+                </div>
+
+                <div class="history__card">
+                    <img src="./images/story photo-3.jpg" alt="story3" class="history__card_img" />
+                    <h3 class="history__card_title">Автостопом в Стамбул</h3>
+                    <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
+                    <a href="#!" class="history__card_more more">Подробнее</a>
+                    <div class="history__card_social">
+                        <a href="#!" class="history__card-inst">instagram</a>
+                        <a href="#!" class="history__card-face">facebook</a>
+                        <a href="#!" class="history__card-vk">ВКонтакте</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Review end -->
+        <!-- History end -->
 
-    <!-- Photo start -->
-    <div class="photo">
-        <h2 class="photo__title title">Фотографии путешествий</h2>
-        <p class="photo__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-        <div class="photo__photos">
-            <div class="photo__big">
-                <img class="photo__pic-b row1" src="./images/photo-1.jpg" alt="photo1">
-                <img class="photo__pic-b row1" src="./images/photo-2.jpg" alt="photo2">
-                <img class="photo__pic-b row1" src="./images/photo-3.jpg" alt="photo3">
-                <img class="photo__pic-b row1" src="./images/photo-4.jpg" alt="photo4">
-            </div>
-            <div class="photo__small">
-                <img class="photo__pic-s" src="./images/photo-5.jpg" alt="photo5">
-                <img class="photo__pic-s" src="./images/photo-6.jpg" alt="photo6">
-                <img class="photo__pic-s" src="./images/photo-7.jpg" alt="photo7">
-                <img class="photo__pic-s" src="./images/photo-8.png" alt="photo8">
-                <img class="photo__pic-s" src="./images/photo-13.jpg" alt="photo9">
-            </div>
-            <div class="photo__big">
-                <img class="photo__pic-b row3" src="./images/photo-9.jpg" alt="photo10">
-                <img class="photo__pic-b row3" src="./images/photo-10.jpg" alt="photo11">
-                <img class="photo__pic-b row3" src="./images/photo-11.jpg" alt="photo12">
-                <img class="photo__pic-b row3" src="./images/photo-12.jpg" alt="photo13">
-            </div>            
-        </div>
-    </div>
-    <!-- Photo end -->
-    
-    <!-- History start -->
-    <div class="history" id="history">
-        <div class="container">
-            <h2 class="history__title title">Истории путешествий</h2>
-            <p class="history__desc description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-
-            <div class="history__card">
-                <img src="./images/story photo-1.jpg" alt="story1" class="history__card_img">
-                <h3 class="history__card_title">Автостопом в Стамбул</h3>
-                <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
-                <ul class="history__card_list">
-                    <li class="history__card_item">вкусная еда</li>
-                    <li class="history__card_item">дешевый транспорт</li>
-                    <li class="history__card_item">красивый город.</li>
-                </ul>
-                <a href="#!" class="history__card_more more">Подробнее</a>
-                <div class="history__card_social">
-                    <a href="#!" class="history__card-inst">instagram</a>
-                    <a href="#!" class="history__card-face">facebook</a>
-                    <a href="#!" class="history__card-youtube">YouTube</a>
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__cta">
+                    <img src="./images/footer photo.jpg" alt="footer" class="footer__cta_img" />
+                    <div class="footer__cta_container">
+                        <h3 class="footer__cta_title">Пора в путешествие вместе с нами!</h3>
+                        <p class="footer__cta_desc">Напиши на почту и узнай подробности на <a href="#!">yourtour@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
-
-            <div class="history__card">
-                <img src="./images/story photo-2.jpg" alt="story2" class="history__card_img">
-                <h3 class="history__card_title">Автостопом в Стамбул</h3>
-                <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
-                <a href="#!" class="history__card_more more">Подробнее</a>
-                <div class="history__card_social">                
-                    <a href="#!" class="history__card-inst">instagram</a>
-                    <a href="#!" class="history__card-vk">ВКонтакте</a>
+            <div class="footer__end">
+                <div class="footer__end-container">
+                    <p class="footer__our">Наши социальные сети</p>
+                    <ul class="footer__list_social">
+                        <li class="footer__item"><img src="./images/inst.svg" alt="inst" /><a href="#!">instagram</a></li>
+                        <li class="footer__item"><img src="./images/fb.svg" alt="fb" /><a href="#!">facebook</a></li>
+                        <li class="footer__item"><img src="./images/vk.svg" alt="vk" /><a href="#!">vkontakte</a></li>
+                    </ul>
                 </div>
             </div>
+        </footer>
+        <!-- footer end -->
 
-            <div class="history__card">
-                <img src="./images/story photo-3.jpg" alt="story3" class="history__card_img">
-                <h3 class="history__card_title">Автостопом в Стамбул</h3>
-                <p class="history__card_desc">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
-                <a href="#!" class="history__card_more more">Подробнее</a>
-                <div class="history__card_social">
-                    <a href="#!" class="history__card-inst">instagram</a>
-                    <a href="#!" class="history__card-face">facebook</a>
-                    <a href="#!" class="history__card-vk">ВКонтакте</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- History end -->
-
-    <!-- footer start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__cta">
-                <img src="./images/footer photo.jpg" alt="footer" class="footer__cta_img">
-                <div class="footer__cta_container">
-                    <h3 class="footer__cta_title">Пора в путешествие вместе с нами!</h3>
-                    <p class="footer__cta_desc">Напиши на почту и узнай подробности на <a href="#!">yourtour@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="footer__end">
-            <div class="footer__end-container">
-                <p class="footer__our">Наши социальные сети</p>
-                <ul class="footer__list_social">
-                    <li class="footer__item"><img src="./images/inst.svg" alt="inst"><a href="#!">instagram</a></li>
-                    <li class="footer__item"><img src="./images/fb.svg" alt="fb"><a href="#!">facebook</a></li>
-                    <li class="footer__item"><img src="./images/vk.svg" alt="vk"><a href="#!">vkontakte</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end -->
-
-    
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>

@@ -88,13 +88,11 @@ a {
 
     &::after {
         content: "";
-        background-image: url('./images/arrow_bt.svg');
+        background: url('./images/arrow_bt.svg') no-repeat center / contain;
         display: inline-block;
         margin-left: 15px;
         width: 24px;
         height: 26px;
-        background-repeat: no-repeat;
-        background-size: contain;
         vertical-align: bottom;
     }
 
