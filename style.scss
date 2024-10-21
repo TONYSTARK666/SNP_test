@@ -81,29 +81,33 @@ a {
 
 // Button more
 .more {
-    padding: 7px 50px 7px 20px;
+    padding: 7px 30px 7px 20px;
     @include font(normal, 2.3rem, 700, $white);
     line-height: 122%;
     transition: all .3s ease;
-    position: relative;
 
     &::after {
-        content: url('/images/arrow_bt.svg');
-        position: absolute;
-        top: .9rem;
-        left: 15.5rem;
+        content: "";
+        background-image: url('/images/arrow_bt.svg');
+        display: inline-block;
+        margin-left: 15px;
+        width: 24px;
+        height: 26px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: bottom;
     }
 
     &:hover {
         background-color: $green;
         border-radius: 5rem;
-        padding: 7px 50px 7px 20px;
+        padding: 7px 30px 7px 20px;
     }
 
     &:active {
         background-color: $orange;
         border-radius: 5rem;
-        padding: 7px 50px 7px 20px;
+        padding: 7px 30px 7px 20px;
     }
 }
 

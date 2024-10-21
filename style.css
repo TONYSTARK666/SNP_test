@@ -56,30 +56,34 @@ a {
 }
 
 .more {
-  padding: 7px 50px 7px 20px;
+  padding: 7px 30px 7px 20px;
   font-style: normal;
   font-size: 2.3rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 122%;
   transition: all 0.3s ease;
-  position: relative;
 }
 .more::after {
-  content: url("/images/arrow_bt.svg");
-  position: absolute;
-  top: 0.9rem;
-  left: 15.5rem;
+  content: "";
+  background-image: url("/images/arrow_bt.svg");
+  display: inline-block;
+  margin-left: 15px;
+  width: 24px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
 }
 .more:hover {
   background-color: #286562;
   border-radius: 5rem;
-  padding: 7px 50px 7px 20px;
+  padding: 7px 30px 7px 20px;
 }
 .more:active {
   background-color: #EFA501;
   border-radius: 5rem;
-  padding: 7px 50px 7px 20px;
+  padding: 7px 30px 7px 20px;
 }
 
 .header {
