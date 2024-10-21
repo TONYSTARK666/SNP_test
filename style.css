@@ -66,7 +66,7 @@ a {
 }
 .more::after {
   content: "";
-  background-image: url("/images/arrow_bt.svg");
+  background-image: url("./images/arrow_bt.svg");
   display: inline-block;
   margin-left: 15px;
   width: 24px;
