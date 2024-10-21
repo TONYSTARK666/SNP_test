@@ -85,6 +85,7 @@ a {
     @include font(normal, 2.3rem, 700, $white);
     line-height: 122%;
     transition: all .3s ease;
+    position: relative;
 
     &::after {
         content: url('/images/arrow_bt.svg');

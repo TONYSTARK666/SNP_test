@@ -63,6 +63,7 @@ a {
   color: #ffffff;
   line-height: 122%;
   transition: all 0.3s ease;
+  position: relative;
 }
 .more::after {
   content: url("/images/arrow_bt.svg");
