@@ -265,7 +265,10 @@ a {
             a {
                 color: $black;
                 transition: all .3s;
-                outline: none;
+
+                &:focus {
+                    outline: none;
+                }
             }
 
             @include font(normal, 2.3rem, 700);
