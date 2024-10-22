@@ -218,6 +218,7 @@ a {
 .choice__list-item a {
   color: #1B1F2B;
   transition: all 0.3s;
+  outline: none;
 }
 .choice__list-item:last-child {
   margin-right: 0;
