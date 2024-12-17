@@ -531,6 +531,13 @@ select.collect__form-input:hover {
   padding-top: 13.5rem;
   background-color: #F9F7F4;
 }
+.photo img {
+  display: block;
+  width: 100%;
+  height: 301px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .photo__title {
   margin-bottom: 3rem;
 }
@@ -552,13 +559,11 @@ select.collect__form-input:hover {
 .photo__pic-b {
   grid-column: span 1;
   height: 30.1rem;
-  max-width: 100%;
   border-radius: 5rem;
 }
 .photo__pic-s {
   grid-column: span 1;
   height: 30.1rem;
-  max-width: 100%;
   border-radius: 5rem;
 }
 
@@ -1007,6 +1012,9 @@ select.collect__form-input:hover {
   .photo {
     padding-top: 8.5rem;
   }
+  .photo img {
+    height: 110px;
+  }
   .photo__desc {
     margin-bottom: 6rem;
   }
@@ -1020,11 +1028,9 @@ select.collect__form-input:hover {
     grid-template-columns: repeat(3, 1fr);
   }
   .photo__pic-b {
-    height: 110px;
     border-radius: 2.5rem;
   }
   .photo__pic-s {
-    height: 110px;
     border-radius: 2.5rem;
   }
   .photo__pic-b.row1:nth-child(3) {
