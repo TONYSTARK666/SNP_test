@@ -358,6 +358,7 @@ a {
   border-radius: 1rem;
   border: 1px solid #F4F0E9;
   background: #F9F7F4;
+  font-family: inherit;
   font-size: 2rem;
   line-height: 142%;
   max-height: 15.2rem;
