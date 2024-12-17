@@ -318,7 +318,7 @@ a {
 }
 .collect__form-label {
   font-size: 2rem;
-  line-height: 142%;
+  line-height: 130%;
   margin-bottom: 1rem;
 }
 .collect__form-input {
@@ -376,8 +376,9 @@ a {
 .collect__form-input[type=radio] + label {
   background: url("./images/radiobutton.svg") no-repeat left;
   padding: 1rem 1rem 1rem 3rem;
-  margin-right: 2.8rem;
+  margin-right: -0.2rem;
   cursor: pointer;
+  line-height: 130%;
 }
 .collect__form-input[type=radio]:checked + label {
   background: url("./images/radiobutton_c.svg") no-repeat left;
@@ -487,6 +488,7 @@ select.collect__form-input:hover {
   flex-wrap: wrap;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+  justify-content: center;
 }
 .review__card {
   display: flex;
@@ -502,6 +504,7 @@ select.collect__form-input:hover {
   font-weight: 700;
   line-height: 122%;
   margin-bottom: 7rem;
+  max-width: 370px;
 }
 .review__card-person {
   display: grid;
@@ -568,7 +571,7 @@ select.collect__form-input:hover {
 }
 
 .history {
-  padding-top: 10rem;
+  padding-top: 13rem;
   background-color: #F9F7F4;
 }
 .history__title {
@@ -976,7 +979,16 @@ select.collect__form-input:hover {
     background-size: 2.25rem;
     margin-right: 1.8rem;
   }
+  .collect__form-input[type=radio]:checked + label {
+    padding-left: 4rem;
+    background-size: 2.25rem;
+    margin-right: 1.8rem;
+  }
   .collect__form-input[type=checkbox] + label {
+    background-size: 2.25rem;
+    font-size: 2rem;
+  }
+  .collect__form-input[type=checkbox]:checked + label {
     background-size: 2.25rem;
     font-size: 2rem;
   }

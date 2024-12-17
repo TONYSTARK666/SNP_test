@@ -393,7 +393,7 @@ a {
 
         &-label {
             font-size: 2rem;
-            line-height: 142%;
+            line-height: 130%;
             margin-bottom: 1rem;
         }
 
@@ -462,8 +462,10 @@ a {
             &+label {
                 background: url('./images/radiobutton.svg') no-repeat left;
                 padding: 1rem 1rem 1rem 3rem;
-                margin-right: 2.8rem;
+                margin-right: -0.2rem;
                 cursor: pointer;
+
+                line-height: 130%;
             }
 
             &:checked+label {
@@ -600,6 +602,7 @@ select.collect__form-input {
         display: flex;
         flex-wrap: wrap;
         column-gap: 3rem;
+        justify-content: center;
     }
 
     &__card {
@@ -616,6 +619,7 @@ select.collect__form-input {
             font-weight: 700;
             line-height: 122%;
             margin-bottom: 7rem;
+            max-width: 370px;
         }
 
         &-person {
@@ -707,7 +711,7 @@ select.collect__form-input {
 // History start 
 
 .history {
-    padding-top: 10rem;
+    padding-top: 13rem;
     background-color: $beige;
 
     &__title {
@@ -1252,7 +1256,18 @@ select.collect__form-input {
                 margin-right: 1.8rem;
             }
 
+            &-input[type=radio]:checked+label {
+                padding-left: 4rem;
+                background-size: 2.25rem;
+                margin-right: 1.8rem;
+            }
+
             &-input[type=checkbox]+label {
+                background-size: 2.25rem;
+                font-size: 2rem;
+            }
+
+            &-input[type=checkbox]:checked+label {
                 background-size: 2.25rem;
                 font-size: 2rem;
             }
