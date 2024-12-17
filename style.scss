@@ -460,15 +460,21 @@ a {
             display: none;
 
             &+label {
+                background: url('./images/radiobutton_c.svg') no-repeat left;
+                background: url('./images/radiobutton.svg') no-repeat left;
                 padding: 1rem 1rem 1rem 3rem;
                 margin-right: 2.8rem;
-                background: url('./images/radiobutton.svg') no-repeat left;
                 cursor: pointer;
             }
 
             &:checked+label {
                 background: url('./images/radiobutton_c.svg') no-repeat left;
             }
+
+            // &+label::after {
+            //     display: none;
+            //     content: url('./images/radiobutton_c.svg');
+            // }
         }
 
         &-input[type="checkbox"] {
@@ -480,6 +486,7 @@ a {
                 line-height: 142%;
                 letter-spacing: -0.17px;
 
+                background: url('./images/checkbox_c.svg') no-repeat left;
                 background: url('./images/checkbox.svg') no-repeat left;
                 padding: 1rem 1rem 1rem 4.3rem;
 
@@ -502,8 +509,13 @@ a {
             }
 
             &:checked+label {
-                background-image: url('./images/checkbox_c.svg');
+                background: url('./images/checkbox_c.svg') no-repeat left;
             }
+
+            // &+label::after {
+            //     display: none;
+            //     content: url('./images/checkbox_c.svg');
+            // }
         }
 
         &-find {
