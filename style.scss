@@ -460,7 +460,6 @@ a {
             display: none;
 
             &+label {
-                background: url('./images/radiobutton_c.svg') no-repeat left;
                 background: url('./images/radiobutton.svg') no-repeat left;
                 padding: 1rem 1rem 1rem 3rem;
                 margin-right: 2.8rem;
@@ -471,24 +470,23 @@ a {
                 background: url('./images/radiobutton_c.svg') no-repeat left;
             }
 
-            // &+label::after {
-            //     display: none;
-            //     content: url('./images/radiobutton_c.svg');
-            // }
+            &+label::after {
+                visibility: hidden;
+                content: url('./images/radiobutton_c.svg');
+            }
         }
 
         &-input[type="checkbox"] {
             display: none;
 
             &+label {
+                background: url('./images/checkbox.svg') no-repeat left;
+                padding: 1rem 1rem 1rem 4.3rem;
+
                 color: $gray;
                 font-size: 1.7rem;
                 line-height: 142%;
                 letter-spacing: -0.17px;
-
-                background: url('./images/checkbox_c.svg') no-repeat left;
-                background: url('./images/checkbox.svg') no-repeat left;
-                padding: 1rem 1rem 1rem 4.3rem;
 
                 cursor: pointer;
 
@@ -512,10 +510,10 @@ a {
                 background: url('./images/checkbox_c.svg') no-repeat left;
             }
 
-            // &+label::after {
-            //     display: none;
-            //     content: url('./images/checkbox_c.svg');
-            // }
+            &+label::after {
+                visibility: hidden;
+                content: url('./images/checkbox_c.svg');
+            }
         }
 
         &-find {
